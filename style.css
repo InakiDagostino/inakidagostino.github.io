@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* navbar */
+
+#nav-bar{
+    position: fixed;
+    top: 0;
+    min-height: 40px;
+    width: 100%;
+    height: 6vh;
+    background-color: black;
+    display: flex;
+    justify-content: end;
+}
+
+/* nav-links */
+
+#nav-bar a{
+    min-width: 80px;
+    display: flex;
+    width: 6vw;
+    height: 100%;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    text-align: center;
+    word-wrap: break-word;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.25s ease-in-out;
+    
+}
+#nav-bar a:hover{
+    background-color: white; 
+    color: black;
+}
+
+/* header */
+
+body{
+    max-width: 100vw;
+}
+
+header{
+    width: 100%;
+    height: 100dvh;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#separation{
+    width: 100%;
+    height: 2.5vh;
+    background: linear-gradient(#333, #333 40%, white);
+}
+
+/* about */
+
+#about{
+    text-align: center;
+    margin-bottom: 4vh;
+}
+
+#about-data{
+    display: flex;
+    justify-content: center;
+}
+
+#content-about{
+    margin-top: 2vw;
+}
+
+#foto{
+    min-width: 150px; /*200px para telefonos*/
+    min-height: 250px;
+    width: 13vw;
+    height: 40vh;
+    object-fit: cover;
+    margin: 2vw;
+    border: 0.125rem solid black;
+    border-radius: 4px;
+}
+
+#skills{
+    margin-top: 2vh;
+}
+
+#icons-skills-container{
+    margin-top: 2vh;
+}
+
+#icons-skills-container .textos{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons-skills{
+    min-width: 80px;
+    min-height: 40px;
+    width: 6vw;
+    height: 7vh;
+}
+
+#react-icon{
+    min-width: 50px;
+    min-height: 40px;
+    width: 3.5vw;
+    height: 7vh;
+}
+
+#descripcion{
+    min-width: 100px;
+    max-width: 600px;
+    text-align: justify;
+}
+
+/*projects */
+
+#proyectos{
+    text-align: center;
+}
+#proyectos > h2{
+    margin-bottom: 2vh;
+}
+
+#tile-map{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.project-tile{
+    margin: 0 2vw;
+    min-width: 150px;
+    min-height: 150px;
+    width: 12vw;
+    height: 25vh;
+    margin: 0 2vw 4vh 2vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 3px solid rgb(0, 0, 0);
+    overflow: hidden;
+    border-radius: 4px;
+    transition: width 0.25s ease-in-out, height 0.25s ease-in-out, margin 0.25s ease-in-out;
+}
+.project-tile:hover{
+    width: 14vw;
+    height: 28vh;
+    margin: 0 1vw 1vh 1vw;
+}
+.project-tile a{
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-project{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#icons-skills-project{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.icons-skills-project{
+    min-width: 40px;
+    min-height: 20px;
+    width: 6%;
+    height: 7%;
+}
+
+#react-icon-project{
+    min-width: 23px;
+    min-height: 20px;
+    width: 4%;
+    height: 7%;
+}
+
+/* contacto */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes{
+    margin: 2vh 0.5vw;
+    text-decoration: none;
+    
+}
+
+.redes img{
+    max-width: 40px;
+    max-height: 40px;
+    min-width: 20px;
+    min-height: 20px;
+}
+
+/* responsive */
+
+@media (max-width: 720px) {
+    main, footer{
+        margin: 10px;
+    }
+
+    #nav-bar a:hover{
+        background-color: black; 
+        color: white;
+    }
+
+    #foto{
+        min-width: 180px;
+    }
+
+    #about-data{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
