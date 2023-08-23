@@ -101,20 +101,14 @@ header{
     display: inline-flex;
     flex-direction: column;
     align-items: center;
+    min-width: 80px;
+    min-height: 40px;
+    width: 2vw;
 }
 
 .icons-skills{
-    min-width: 80px;
-    min-height: 40px;
-    width: 6vw;
-    height: 7vh;
-}
-
-#react-icon{
-    min-width: 50px;
-    min-height: 40px;
-    width: 3.5vw;
-    height: 7vh;
+    width: 100%;
+    object-fit: scale-down;
 }
 
 #descripcion{
